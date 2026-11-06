@@ -34,12 +34,14 @@ function GraphDashboard() {
 
   return (
     <div ref={ref} className={`graph-dashboard`}>
-      <GraphDashboardHeader
-        onClose={closeDashboar}
-        onType={handleSearch}
-        search={search}
-      />
-      <GraphDashboardBody filter={search} />
+      <div className="relative h-full">
+        <GraphDashboardHeader
+          onClose={closeDashboar}
+          onType={handleSearch}
+          search={search}
+        />
+        <GraphDashboardBody filter={search} />
+      </div>
     </div>
   );
 }

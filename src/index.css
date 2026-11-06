@@ -29,7 +29,7 @@
 }
 
 body {
-  padding: 3rem 0rem;
+  padding: 0.2rem 0rem;
 }
 
 /* Util */
@@ -504,8 +504,9 @@ input:disabled {
 }
 
 .dashboard-header {
-  position: relative;
-  height: 15%;
+  position: sticky;
+  top: 0px;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 10px;
@@ -591,7 +592,7 @@ input:disabled {
 
 /* dashboard body */
 .dashboard-body {
-  height: 85%;
+  /* height: 85%; */
   padding: 1.5rem 2rem;
   overflow: auto;
   z-index: 1;
@@ -754,7 +755,7 @@ input:disabled {
 }
 
 .solve .dashboard-body {
-  padding-bottom: 4rem !important;
+  padding-bottom: 0rem !important;
 }
 
 .solve .solve-btn-container {
@@ -762,13 +763,10 @@ input:disabled {
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: sticky;
   padding: 1rem 0rem;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px -1px 10px var(--color-shadow-dark);
+  left: 0;
 }
 
 .solve-btn {

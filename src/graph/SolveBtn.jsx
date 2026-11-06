@@ -31,7 +31,6 @@ function SolveBtn({ parentRef, wantedNodes, start }) {
       >
         Find shortest path
       </button>
-      ;
     </div>
   );
 }

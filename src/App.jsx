@@ -446,7 +446,7 @@ function App() {
 
   return (
     <div>
-      <Graph solveFn={solveFn}>
+      <Graph solveFn={solveFn} height={550}>
         <Graph.GraphFilter />
         <Graph.Presentation />
         <Graph.NodesList />

@@ -52,6 +52,7 @@ function Solve() {
           Select start point
         </label>
         <select
+          style={{height: "fit-content"}}
           value={selectedNode}
           onChange={(e) => setSelectedNode(e.target.value)}
           disabled={!nodes.length || isSolving || path.length}
